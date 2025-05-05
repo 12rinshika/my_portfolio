@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Rinshika Dubey</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+
+    <link rel="stylesheet" href="new_styles.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+        AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- nav scetion start here -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a
+          class="navbar-brand fw-bold fs-2"
+          href="#"
+          style="color: #3f396d; font-family: 'Poppins'; font-weight: 600"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+          <a href="#contact" class="nav-link">Contact</a>
+        </button>
+      </div>
+    </nav>
+
+    <!-- nav section end here -->
+
+    <!-- home section start here -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="animated-bg"></div>
+      <!-- Animated background layer -->
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h2 class="about-first-heading">
+            Hello! It's me <br /><span class="c-orange">Rinshika Dubey</span>
+            <!-- Element to contain animated typing -->
+            <p class="about-intro">
+              And I'm a <span id="element" class="typed-text"></span>
+            </p>
+          </h2>
+          <p class="home-about-intro-para">
+            I'm A Web Developer having 5 years of experience in expertise of
+            creating website with fully responsive Also with backend part too.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+            <a
+              href="image/resume.pdf"
+              download="SampleCV"
+              style="text-decoration: none; color: #fff"
+              >Download CV</a
+            >
+          </button>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="image/profile_pic_2.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section end here -->
+
+    <!-- my about section section -->
+    <section id="about" class="about-section-container">
+      <div class="about-section-main">
+        <div data-aos="slide-right">
+          <img src="image/profile_pic_2.jpg" alt="" class="about-profile-img" />
+        </div>
+        <div class="about-intro-section" data-aos="slide-left">
+          <h1 class="about-title">
+            About <span class="color-change">Me</span>
+          </h1>
+          <h3 class="about-heading">Full Stack Developer!</h3>
+          <div class="about-text">
+            I’m a dedicated Full Stack Developer with a passion for building
+            seamless, scalable, and user-centric web applications. From crafting
+            responsive front-end interfaces with modern frameworks like React
+            and Tailwind CSS, to architecting robust back-end solutions using
+            Node.js, Express, and or SQL — I enjoy working across the entire
+            stack to bring ideas to life.
+          </div>
+
+          <div id="moreText" class="more-text">
+            <div class="about-text">
+              I’ve also worked on deep learning projects like medical image
+              classification using DenseNet121, blending AI with real-world
+              applications. I enjoy clean code, collaboration, and turning
+              complex problems into smooth solutions.
+            </div>
+          </div>
+          <button id="toggleBtn" class="read-more-btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- my about section end here -->
+
+    <!-- services section start -->
+    <section class="expertise pt-5 pb-5" id="service">
+      <div class="heading text-center">
+        <small>My <span class="color-change">Expertise</span></small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-3" data-aos="fade-up">
+          <div class="service-card bg-light">
+            <div class="img">
+              <img
+                src="image/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="expertise-intro">
+                Crafting intuitive, modern, and visually appealing user
+                interfaces with a strong focus on usability and user experience.
+                Skilled in creating responsive designs that adapt seamlessly
+                across all devices.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-10" data-aos="fade-up">
+          <div class="service-card bg-light">
+            <div class="img">
+              <img
+                src="image/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="expertise-intro">
+                Building fast, secure, and scalable web applications using
+                modern technologies like HTML, CSS, JavaScript, React, and
+                backend integration. Strong grip on both front-end and back-end
+                workflows.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-10" data-aos="fade-up">
+          <div class="service-card bg-light">
+            <div class="img">
+              <img
+                src="image/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="expertise-intro">
+                Experienced in identifying and fixing bugs efficiently. Skilled
+                in using browser dev tools, console logging, and debugging tools
+                to troubleshoot issues and optimize performance across various
+                platforms and devices.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- skill section start here -->
+
+    <section class="skills-section" id="skills">
+      <h1 class="about-title">My <span class="color-change">Skills</span></h1>
+      <div class="skills-container">
+        <!-- Linear Skills -->
+        <div class="skills-left">
+          <div>
+            <h1 class="skills-type-heading">Technical Skills</h1>
+          </div>
+          <div class="skill">
+            <p>HTML</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="90">0%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>CSS</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="85">0%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="75">0%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>React.Js</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="75">0%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Node.Js</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="75">0%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Python</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-percent="75">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Circular Skills -->
+        <div class="skills-right">
+          <div>
+            <h1 class="skills-type-heading">Professional Skills</h1>
+          </div>
+          <div class="circular-bar-container">
+            <div class="circle-box">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45" />
+                <circle
+                  class="progress"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  data-percent="95"
+                />
+              </svg>
+              <div class="circle-label">
+                <span class="circle-value">0%</span><br />Creative Design
+              </div>
+            </div>
+            <div class="circle-box">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45" />
+                <circle
+                  class="progress"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  data-percent="90"
+                />
+              </svg>
+              <div class="circle-label">
+                <span class="circle-value">0%</span><br />Responsive Layout
+              </div>
+            </div>
+            <div class="circle-box">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45" />
+                <circle
+                  class="progress"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  data-percent="90"
+                />
+              </svg>
+              <div class="circle-label">
+                <span class="circle-value">0%</span><br />Responsive Layout
+              </div>
+            </div>
+            <div class="circle-box">
+              <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45" />
+                <circle
+                  class="progress"
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  data-percent="90"
+                />
+              </svg>
+              <div class="circle-label">
+                <span class="circle-value">0%</span><br />Responsive Layout
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section end here -->
+
+    <!-- project portfolio section start here -->
+
+    <section class="project" id="project">
+      <div class="portfolio-container">
+        <h1 class="project-heading">
+          My <span class="color-change">Projects</span>
+        </h1>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="image/emoji-game (1).png" alt="Project 1" />
+            <div class="portfolio-overlay">
+              <h3>
+                Emoji Game
+
+                <a href="https://emojipuzzle.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Responsive Game Application using HTML, CSS, ReactJS.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="image/jobbyapp.png" alt="Project 2" />
+            <div class="portfolio-overlay">
+              <h3>
+                Jobby App
+                <a href="https://jobbyhunt.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Responsive Job appliaction using ReactJs.</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="image/my-journey.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                My Journey
+                <a href="https://skilltracker.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>
+                using React library creating my Journey in frontend Developer.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/rock-paper-scissor.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                Rock Paper Scissor Game
+                <a href="https://rockwarriors.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Fun Game created by using ReactJS.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/e-commerce.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                NxtTrendz E-Commerce Website
+                <a href="https://trendzworld.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>
+                Full responsive e-commerce website with various functionalities.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/e-waste.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                E-waste Website
+                <a href="https://elecwaste.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>E-waste website using HTML, CSS, JavaScript.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/food-munch.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                Food Munch Single Web Page
+                <a href="https://foodfunch.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Food Munch application using HTML, CSS</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/todo-app.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                Todo APP
+                <a href="https://todoapplicat1.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Todo App using HTML, CSS, JavaScript.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/TOURISM.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                Tourism Web Page
+                <a href="https://rinstourism24.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>TOURISM website using HTML, CSS.</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="image/wikipedia.png" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>
+                Wikipedia Search Application
+                <a href="https://searchappl1.ccbp.tech/" class="project-link"
+                  >Click Here</a
+                >
+              </h3>
+              <p>Wikipedia search application using HTMl, CSS, JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project portfolio section end here -->
+
+    <!-- contact section start here -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="form-container">
+        <div data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- contact section end here -->
+    <!-- footer section start here -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p class="footer-last-para">My Personal Portfolio</p>
+    </footer>
+    <!-- footer section end here -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- typescript for animated text -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+
+    <!-- custom js file linking -->
+    <script src="new_scripts.js"></script>
+  </body>
+</html>
